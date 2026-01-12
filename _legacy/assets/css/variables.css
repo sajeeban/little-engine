@@ -1,0 +1,45 @@
+:root {
+  /* Brand Palette - Preserved */
+  --color-cream: #FBEED0;
+  --color-gold: #DDAF61;
+  --color-deep-blue: #317EB9;
+  --color-sky-blue: #78BAE3;
+  --color-light-blue: #C5E1EE;
+
+  /* Refined Functional Colors */
+  --bg-primary: #FFFFFF;
+  --bg-warm: #FDFBF7;
+  /* Softer than pure white */
+  --bg-cream-soft: rgba(251, 238, 208, 0.4);
+  --bg-glass: rgba(255, 255, 255, 0.85);
+
+  --text-primary: #2C3E50;
+  --text-secondary: #546E7A;
+  --text-accent: var(--color-deep-blue);
+
+  --border-subtle: rgba(49, 126, 185, 0.1);
+
+  /* Typography - Premium Pairing */
+  --font-heading: 'Playfair Display', serif;
+  /* Adds warmth and authority */
+  --font-body: 'Outfit', -apple-system, sans-serif;
+  /* Clean and modern */
+
+  /* Spacing */
+  --container-width: 1280px;
+  --header-height: 90px;
+
+  /* Radius - Organic & Soft */
+  --radius-sm: 12px;
+  --radius-md: 24px;
+  --radius-lg: 40px;
+
+  /* Shadows - Elevation System */
+  --shadow-sm: 0 4px 20px rgba(49, 126, 185, 0.06);
+  --shadow-md: 0 12px 40px rgba(49, 126, 185, 0.08);
+  --shadow-lg: 0 20px 60px rgba(49, 126, 185, 0.12);
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-smooth: 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
