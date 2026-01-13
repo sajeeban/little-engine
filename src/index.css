@@ -43,3 +43,22 @@
     @apply bg-white/90 backdrop-blur-md border border-white/50 shadow-sm rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-gold;
   }
 }
+
+@media (max-width: 768px) {
+  .animate-blob {
+    animation: none !important;
+    display: none !important;
+    /* Completely remove from layout */
+  }
+
+  /* Disable expensive real-time blur calculation */
+  .backdrop-blur-md,
+  .backdrop-blur-sm,
+  .glass-card,
+  header {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    background-color: rgba(255, 255, 255, 0.98) !important;
+    /* Solid fallback */
+  }
+}
