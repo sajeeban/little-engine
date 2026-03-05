@@ -14,7 +14,7 @@ const Contact = () => {
         e.preventDefault();
         const subject = `Inquiry from ${formState.name}`;
         const body = `Name: ${formState.name}%0D%0AEmail: ${formState.email}%0D%0A%0D%0A${formState.message}`;
-        window.location.href = `mailto:littleenginepsychlogy@gmail.com?subject=${subject}&body=${body}`;
+        window.location.href = `mailto:littleenginepsychology@gmail.com?subject=${subject}&body=${body}`;
     };
 
     const handleChange = (e) => {
@@ -25,7 +25,7 @@ const Contact = () => {
     };
 
     const copyEmail = () => {
-        navigator.clipboard.writeText('littleenginepsychlogy@gmail.com');
+        navigator.clipboard.writeText('littleenginepsychology@gmail.com');
         setCopied(true);
         setTimeout(() => setCopied(false), 2000);
     };
@@ -72,8 +72,8 @@ const Contact = () => {
                                     <div>
                                         <p className="text-sm text-gold/80 mb-1 uppercase tracking-wider font-bold">Email Me</p>
                                         <div className="flex items-center gap-2">
-                                            <a href="mailto:littleenginepsychlogy@gmail.com" className="font-medium hover:text-gold transition-colors break-all text-white">
-                                                littleenginepsychlogy@gmail.com
+                                            <a href="mailto:littleenginepsychology@gmail.com" className="font-medium hover:text-gold transition-colors break-all text-white">
+                                                littleenginepsychology@gmail.com
                                             </a>
                                             <button onClick={copyEmail} className="p-1 hover:bg-white/10 rounded text-white/70 hover:text-white transition-colors">
                                                 {copied ? <Check size={14} /> : <Copy size={14} />}
